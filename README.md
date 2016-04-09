@@ -8,7 +8,7 @@ At the Energy Hackdays 2016 we have sketched and made a basic app prototype to s
 
 The prototype is made using [Ionic Framework](http://ionicframework.com/docs/), [Raphaël](https://en.wikipedia.org/wiki/Rapha%C3%ABl_(JavaScript_library)) and [Google Maps Elevation API](https://developers.google.com/maps/documentation/elevation/intro).
 
-Demo: http://lofos.soda.camp
+Demo: http://soda.camp/workshops/2016/lofos
 Info: http://github.com/loleg/lofos
 
 ## Next data sources

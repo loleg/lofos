@@ -15,11 +15,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/graphael/0.5.1/g.raphael-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/graphael/0.5.1/g.line-min.js"></script>
 
-    <!-- rangeslider polyfill -->
-    <script src="lib/jquery-1.12.3.min.js"></script>
-    <link href="lib/rangeslider.css" rel="stylesheet">
-    <script src="lib/rangeslider.min.js"></script>
-
     <link href="index.css" rel="stylesheet">
     <script src="index.js"></script>
 
@@ -27,24 +22,16 @@
   <body ng-controller="MapCtrl">
     <ion-header-bar class="bar-dark">
       <h1 class="title hide">Lófos</h1>
-      <!-- <p class="note">Touch any point on the map for a route profile.</p> -->
+      <p class="note">Touch any point on the map for a route profile.</p>
       <a href="http://make.opendata.ch/wiki/project:coolrolln" class="button button-icon icon ion-flash">makeopendata</a>
       <div id="graph"></div>
     </ion-header-bar>
     <ion-content>
       <div id="map" data-tap-disabled="true"></div>
     </ion-content>
-    <ion-footer-bar class="bar-dark">
+    <!-- <ion-footer-bar class="bar-dark"> -->
       <!-- <a ng-click="centerOnMe()" class="button button-icon icon ion-compass">Localize</a> -->
-      <a ng-click="renderSlopemap()" class="button button-icon icon ion-paper-airplane">Coolmap</a>
-      <!-- <p class="note">Energy expenditure gradient:</p> -->
-      <input
-        type="range"
-        min="0"
-        max="100"
-        step="10"
-        value="60"
-      >
-    </ion-footer-bar>
+      <!-- <a ng-click="renderSlopemap()" class="button button-icon icon ion-paper-airplane">Energy gradient</a> -->
+    <!-- </ion-footer-bar> -->
   </body>
 </html>

@@ -31,16 +31,9 @@ angular.module('ionic.coolroll', ['ionic'])
         var clickArray = [];
         var handleMapClick = function(event) {
           var location = event.latLng;
-          clickArray.push(location);
           $scope.plotMarker(location);
-          if (clickArray.length == 1) {
-            $scope.requestSlope(myLatlng, clickArray[0], true);
-            clickArray = [];
-          }
-          if (clickArray.length > 1) {
-            $scope.requestSlope(clickArray[0], clickArray[1], true);
-            clickArray = [];
-          }
+          var origin = $scope.map.getCenter();
+          $scope.requestSlope(origin, location, true);
         };
         google.maps.event.addListener(map, 'click', handleMapClick);
 
@@ -49,12 +42,12 @@ angular.module('ionic.coolroll', ['ionic'])
         // Center on load
         $scope.centerOnMe();
 
-        $('input[type="range"]').rangeslider({
-            polyfill: true,
-            onSlideEnd: function(position, value) {
-              console.log(value);
-            }
-        });
+        // $('input[type="range"]').rangeslider({
+        //     polyfill: true,
+        //     onSlideEnd: function(position, value) {
+        //       console.log(value);
+        //     }
+        // });
       }
       google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -149,6 +142,7 @@ angular.module('ionic.coolroll', ['ionic'])
           //console.log(x, elevationSlope);
           if (graph !== null) graph.remove();
           graph = r.linechart(0, 0, 300, 40, x, [y]);
+          graph.attr("stroke", "#FFFFFF");
         };
 
         var showSteps = function(request, response) {
