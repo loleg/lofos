@@ -1,0 +1,28 @@
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll {
+  height: 100%;
+}
+
+.marker {
+	font-weight: bold;
+	color: blue;
+	text-decoration: underline;
+	min-width: 6em;
+}
+
+.note {
+  text-align: right;
+  position: absolute;
+  right: 5px; top: 5px;
+  width: 12em;
+  font-size: 80%;
+  line-height: 140%;
+}
+
+.bar.bar-dark {
+  background-color: blue;
+}
