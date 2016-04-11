@@ -25,7 +25,9 @@ While there are plenty of individual community projects (e.g. [Segway Battery FA
 
 **Public electric sockets**
 
-[PlugShare](http://www.plugshare.com/) ("the world's largest electric vehicle (EV) charging network with a database of 50,000+ charging stations" -[FAQ](http://faq.plugshare.com/article/7-why-should-i-use-plugshare)) connects EV users with charging locations. According to [data.gov](https://www.data.gov/energy/blog/who-uses-open-data), much of the data is sourced in the USA from the Energy Department's Application Programming Interface (API) for the [Alternative Fuels Data Center](http://www.afdc.energy.gov/locator/stations/). We would like to encourage similar open databases worldwide.
+[PlugShare](http://www.plugshare.com/) ("the world's largest electric vehicle (EV) charging network with a database of 50,000+ charging stations" -[FAQ](http://faq.plugshare.com/article/7-why-should-i-use-plugshare)) connects EV users with charging locations. According to [data.gov](https://www.data.gov/energy/blog/who-uses-open-data), much of the data is sourced in the USA from the Energy Department's Application Programming Interface (API) for the [Alternative Fuels Data Center](http://www.afdc.energy.gov/locator/stations/). 
+
+In Europe, the non-profit association [LEMnet.org](http://www.lemnet.org/) collects and distributes this kind of data. We only discovered them after the hackathon and will look into using it next.
 
 **Traffic**
 
